@@ -5,103 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack | Moda Íntima</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fff0f5;
-            color: #4a4a4a;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fcf4f6;
+            color: #4a4a4a;
             text-align: center;
         }
         header {
-            background-color: #d87093;
+            background-color: #2b1d22;
             color: white;
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 1.1rem;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .produto-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(216, 112, 147, 0.15);
-            overflow: hidden;
-            margin-bottom: 30px;
-            border: 1px solid #ffc0cb;
-        }
-        .produto-card img {
-            width: 100%;
-            max-height: 450px;
-            object-fit: cover;
-        }
-        .produto-info {
-            padding: 20px;
-        }
-        .produto-info h3 {
-            margin: 0 0 10px;
-            color: #c71585;
+        .logo-title {
             font-size: 1.5rem;
-        }
-        .produto-info p {
-            color: #666;
-            font-size: 1rem;
+            letter-spacing: 3px;
+            color: #f7d6e0;
             margin-bottom: 20px;
+            text-transform: uppercase;
         }
-        .btn-whats {
-            display: inline-block;
-            background-color: #25d366;
+        .hero {
+            padding: 40px 20px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .hero p {
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            max-width: 280px;
+        }
+        .btn {
+            background-color: #794c5d;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 4px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: 1px solid #9e697d;
             transition: background 0.3s;
         }
-        .btn-whats:hover {
-            background-color: #1ebe57;
+        .btn:hover {
+            background-color: #9e697d;
+        }
+        .section-title {
+            margin: 40px 20px 20px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            color: #4a4a4a;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 0 15px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .category-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .category-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .category-info {
+            padding: 15px 10px;
+            background: #ffffff;
+        }
+        .category-info h3 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .category-info p {
+            font-size: 0.8rem;
+            color: #777;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            text-decoration: none;
         }
         footer {
-            margin-top: 50px;
-            padding: 20px;
-            color: #888;
-            font-size: 0.9rem;
-            background-color: #ffe4e1;
+            background-color: #2b1d22;
+            color: #ccc;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        footer h4 {
+            color: #f7d6e0;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>JACK</h1>
-        <p>Moda Íntima — Elevando a autoestima com conforto e estilo</p>
+        <div class="logo-title">Jack Moda Íntima</div>
     </header>
 
-    <div class="container">
-        <div class="produto-card">
-            <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Peça de Moda Íntima">
-            <div class="produto-info">
-                <h3>Coleção Exclusiva</h3>
-                <p>Elegância e conforto pensados especialmente para si.</p>
-                <a href="https://wa.me/" class="btn-whats" target="_blank">Pedir pelo WhatsApp</a>
-            </div>
+    <div class="hero">
+        <h1>Vista sua essência.</h1>
+        <p>Peças em renda fina e tecidos leves, pensadas para o conforto, a beleza e a confiança de cada mulher — em todos os tamanhos.</p>
+        <div class="btn-group">
+            <a href="#categorias" class="btn">Conheça nossa coleção</a>
+            <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20comprar%20pelo%20WhatsApp." class="btn" target="_blank">Comprar pelo WhatsApp</a>
         </div>
     </div>
 
+    <div id="categorias">
+        <h2 class="section-title">Navegue por estilo</h2>
+    </div>
+
+    <div class="categories-grid">
+        <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20ver%20as%20Lingeries." class="category-card" target="_blank">
+            <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Lingeries" class="category-img">
+            <div class="category-info">
+                <h3>Lingeries</h3>
+                <p>Ver produtos</p>
+            </div>
+        </a>
+
+        <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20ver%20os%20Baby%20Dolls." class="category-card" target="_blank">
+            <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Baby Dolls" class="category-img">
+            <div class="category-info">
+                <h3>Baby Dolls</h3>
+                <p>Ver produtos</p>
+            </div>
+        </a>
+
+        <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20ver%20as%20Camisolas." class="category-card" target="_blank">
+            <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Camisolas" class="category-img">
+            <div class="category-info">
+                <h3>Camisolas</h3>
+                <p>Ver produtos</p>
+            </div>
+        </a>
+
+        <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20ver%20os%20Conjuntos." class="category-card" target="_blank">
+            <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Conjuntos" class="category-img">
+            <div class="category-info">
+                <h3>Conjuntos</h3>
+                <p>Ver produtos</p>
+            </div>
+        </a>
+
+        <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20ver%20a%20linha%20Plus%20Size." class="category-card" target="_blank">
+            <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Plus Size" class="category-img">
+            <div class="category-info">
+                <h3>Plus Size</h3>
+                <p>Ver produtos</p>
+            </div>
+        </a>
+
+        <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20ver%20as%20Novidades." class="category-card" target="_blank">
+            <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Novidades" class="category-img">
+            <div class="category-info">
+                <h3>Novidades</h3>
+                <p>Ver produtos</p>
+            </div>
+        </a>
+    </div>
+
+    <a href="https://wa.me/5573998584333?text=Olá!%20Vim%20pelo%20site." class="whatsapp-float" target="_blank">💬</a>
+
     <footer>
-        <p>&copy; 2026 Jack | Moda Íntima. Todos os direitos reservados.</p>
+        <h4>Jack Moda Íntima</h4>
+        <p>Moda íntima com delicadeza, conforto e confiança para todos os corpos.</p>
     </footer>
 
 </body>
