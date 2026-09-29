@@ -1,16 +1,120 @@
-Por favor, crie um catálogo digital moderno, elegante e responsivo para a minha marca "Jack Moda Íntima". O site não deve usar formato de slides, mas sim uma visualização estruturada em formato de grelha (grid) dividida claramente pelas seguintes categorias:
-Lingerie (com sutiãs, calcinhas e conjuntos)
-Calcinhas Personalizadas
-Biquínis
-Maiôs
-Saídas de Praia
-Bolsas e Acessórios
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack | Moda Íntima e Praia</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #fcf4f6; color: #4a4a4a; text-align: center; }
+        header { background-color: #2b1d22; color: white; padding: 30px 20px; }
+        header h1 { font-size: 24px; margin-bottom: 5px; }
+        header p { font-size: 14px; color: #d8b4bc; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .category-title { text-align: left; font-size: 20px; color: #2b1d22; margin: 30px 0 15px 10px; border-left: 4px solid #b56576; padding-left: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 10px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; }
+        .card img { width: 100%; height: 280px; object-fit: cover; background: #eee; }
+        .card-body { padding: 15px; text-align: left; }
+        .card-title { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 8px; }
+        .card-price { font-size: 18px; font-weight: bold; color: #b56576; margin-bottom: 12px; }
+        .btn-whatsapp { display: block; background-color: #25d366; color: white; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; text-align: center; transition: background 0.3s; }
+        .btn-whatsapp:hover { background-color: #1ebe5d; }
+        footer { margin-top: 50px; background-color: #2b1d22; color: white; padding: 20px; font-size: 14px; }
+    </style>
+</head>
+<body>
 
-Cada produto exibido no grid deve conter:
-Espaço para imagem da peça
+    <header>
+        <h1>Jack Moda Íntima</h1>
+        <p>Catálogo Digital Exclusivo - Escolha sua peça e peça direto pelo WhatsApp</p>
+    </header>
 
-Nome do produto em destaque
-Preço visível
-Um botão direto de encomenda escrito "Pedir no WhatsApp" que abra um chat pré-configurado para o meu número com uma mensagem automática de interesse no produto específico.
+    <div class="container">
 
-O design geral deve usar cores suaves e sofisticadas que combinem com moda íntima e praia (como tons de nude, rosé e detalhes
+        <!-- Lingerie -->
+        <h2 class="category-title">Lingerie</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Lingerie">
+                <div class="card-body">
+                    <div class="card-title">Conjunto Lingerie Sofisticado</div>
+                    <div class="card-price">R$ 89,90</div>
+                    <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20encomendar%20o%20Conjunto%20Lingerie." class="btn-whatsapp" target="_blank">Pedir no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calcinhas Personalizadas -->
+        <h2 class="category-title">Calcinhas Personalizadas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Calcinha Personalizada">
+                <div class="card-body">
+                    <div class="card-title">Calcinha Personalizada com Nome</div>
+                    <div class="card-price">R$ 49,90</div>
+                    <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20encomendar%20a%20Calcinha%20Personalizada." class="btn-whatsapp" target="_blank">Pedir no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biquínis -->
+        <h2 class="category-title">Biquínis</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Biquíni">
+                <div class="card-body">
+                    <div class="card-title">Biquíni Exclusivo Verão</div>
+                    <div class="card-price">R$ 129,90</div>
+                    <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20encomendar%20o%20Biquíni." class="btn-whatsapp" target="_blank">Pedir no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maiôs -->
+        <h2 class="category-title">Maiôs</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Maiô">
+                <div class="card-body">
+                    <div class="card-title">Maiô Elegante</div>
+                    <div class="card-price">R$ 149,90</div>
+                    <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20encomendar%20o%20Maiô." class="btn-whatsapp" target="_blank">Pedir no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Saídas de Praia -->
+        <h2 class="category-title">Saídas de Praia</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Saída de Praia">
+                <div class="card-body">
+                    <div class="card-title">Saída de Praia Rendada</div>
+                    <div class="card-price">R$ 99,90</div>
+                    <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20encomendar%20a%20Saída%20de%20Praia." class="btn-whatsapp" target="_blank">Pedir no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bolsas -->
+        <h2 class="category-title">Bolsas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="3155347f-a09e-4cbe-b9d2-cbda29ff7be8.jpeg" alt="Bolsa">
+                <div class="card-body">
+                    <div class="card-title">Bolsa de Praia Casual</div>
+                    <div class="card-price">R$ 119,90</div>
+                    <a href="https://wa.me/5573998584333?text=Olá!%20Gostaria%20de%20encomendar%20a%20Bolsa." class="btn-whatsapp" target="_blank">Pedir no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jack Moda Íntima - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
